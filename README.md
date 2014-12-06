@@ -1,4 +1,4 @@
 springBeanExamples
 ==================
-Example of injecting values using <value>
+Example of injecting values... 
 injecting Boolean argument
