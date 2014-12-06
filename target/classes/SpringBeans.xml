@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+	<bean id="User" class="com.mkyong.common.User">
+		<property name="name">
+			<value>mkyong</value>
+		</property>
+		<property name="facebook">
+			<ref local="Facebook"/>
+		</property>
+	</bean>
+	
+	<bean id="Facebook" class="com.mkyong.common.Facebook">
+		<property name="token" value="123456"/>
+		<property name="isAuthenticated">
+			<value type="java.lang.Boolean">true</value>
+		</property>
+	</bean>
+</beans>
